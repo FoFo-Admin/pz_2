@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="pz_2.View.CreateType"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pz_2.View"
+        mc:Ignorable="d"
+        Height="450" Width="800">
+    <Grid Height="300" Width="300">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0" 
+                   Text="{Binding HeaderText}" 
+                   FontSize="16" 
+                   HorizontalAlignment="Center"
+                   Margin="10,20,10,20"/>
+        <TextBlock Grid.Row="1" 
+                   TextWrapping="Wrap"
+                   Text="{Binding ErrorMessage}"
+                   Foreground="Red"
+                   Margin="10,0,10,10"/>
+        <TextBlock Grid.Row="2" 
+                   Text="{Binding InputLabel}"
+                   Margin="10,0,10,5"/>
+        <TextBox Grid.Row="3"
+                 Text="{Binding InputText, UpdateSourceTrigger=PropertyChanged}"
+                 Margin="10,0,10,10"/>
+
+        <Grid Grid.Row="5" HorizontalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" 
+                    Content="Додати"
+                    Width="80"
+                    Margin="0,0,20,0"
+                    HorizontalAlignment="Center"
+                    Command="{Binding CreateType}"/>
+            <Button Grid.Column="1" 
+                    Content="Назад"
+                    Width="80"
+                    Margin="20,0,0,0"
+                    HorizontalAlignment="Center"
+                    Command="{Binding GoToTypes}"/>
+        </Grid>
+        
+    </Grid>
+</UserControl>

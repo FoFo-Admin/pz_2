@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\AddBusiness.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\BusinessesList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\BusinessInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CreateContact.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CreateProduct.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CreateType.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Main.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PropertiesList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\AddBusiness.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\BusinessesList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\BusinessInfo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreateContact.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreateProduct.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreateType.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Main.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PropertiesList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
